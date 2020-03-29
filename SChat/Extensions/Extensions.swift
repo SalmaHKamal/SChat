@@ -6,4 +6,12 @@
 //  Copyright © 2020 salma. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UITextField {
+    static func reset(textFields: UITextField...) {
+        textFields.forEach { (txtField) in
+            txtField.text = ""
+        }
+    }
+}
